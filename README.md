@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Let’s Shyp 🚚 — Booking Flow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern multi-step booking flow UI for hyperlocal logistics, built using **React** with a focus on:
+✅ smooth user flow  
+✅ validation + error handling  
+✅ realistic edge cases  
+✅ clean UI consistency + CTA placement  
+✅ clean code structure and readability  
 
-## Available Scripts
+> Note: This project intentionally avoids overbuilding. No login, maps, or real payment gateway is implemented.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ✅ Multi-step Booking Flow
+1. **Service Selection**
+2. **Pickup & Drop Details**
+3. **Package / Vehicle Details**
+4. **Pricing Summary**
+5. **Checkout**
+6. **Booking Confirmation**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✅ UX / UI
+- Dark **glassmorphism** UI
+- 3D shadows + modern buttons
+- Clear CTA placement
+- Responsive layout (desktop + mobile)
 
-### `npm test`
+### ✅ Validations & Error Handling
+- Required fields validation
+- Phone number validation (Indian format)
+- Pincode validation (6-digit numeric)
+- Unserviceable pincode handling
+- Package size weight limit validation
+- Disabled CTAs until valid fields
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ Pricing System (Mocked)
+- Base Fare
+- Distance charge (mock distance)
+- Express delivery fee
+- Package/Vehicle extra charge
+- Fragile item fee
+- Platform fee
+- GST (18%)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
+- **React (Create React App)**
+- **Pure CSS** (No UI frameworks used)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Project Structure
 
-### `npm run eject`
+src/
+components/
+BookingConfirmation.js
+Checkout.js
+PackageDetails.js
+PickupDropDetails.js
+PricingSummary.js
+ProgressBar.js
+ServiceSelection.js
+App.js
+App.css
+index.js
+index.css
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
