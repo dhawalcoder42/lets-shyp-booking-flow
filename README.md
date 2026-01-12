@@ -68,3 +68,17 @@ App.css
 index.js
 index.css
 
+
+---
+
+## ⚙️ Setup Instructions
+
+1) Clone repo
+git clone <YOUR_GITHUB_REPO_LINK>
+cd lets-shyp-booking
+2) Install dependencies
+npm install
+3) Run locally
+npm start
+App runs on:
+http://localhost:3000
