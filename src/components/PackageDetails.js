@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../App.css';
 
 const PackageDetails = ({ data, onNext, serviceType, addressData }) => {
   const [formData, setFormData] = useState(data || {
@@ -37,7 +36,7 @@ const PackageDetails = ({ data, onNext, serviceType, addressData }) => {
       setErrors({ ...errors, [name]: '' });
     }
 
-    // Show price change notification
+  
     if (name === 'packageType' || name === 'vehicleType') {
       const selectedItem = isPackageService 
         ? packageTypes.find(p => p.id === value)

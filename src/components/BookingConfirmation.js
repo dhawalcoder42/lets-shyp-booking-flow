@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 
 const BookingConfirmation = ({ bookingData, onNewBooking }) => {
   const bookingId = `LS-${Math.random().toString(36).substr(2, 6).toUpperCase()}`;

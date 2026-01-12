@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "./App.css";
 import { useState } from "react";
 import ProgressBar from "./components/ProgressBar";
 import ServiceSelection from "./components/ServiceSelection";

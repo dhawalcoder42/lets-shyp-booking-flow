@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../App.css';
 
 const PickupDropDetails = ({ data, onNext, serviceType }) => {
   const [formData, setFormData] = useState(data || {
@@ -30,12 +29,12 @@ const PickupDropDetails = ({ data, onNext, serviceType }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Clear error on change
+  
     if (errors[name]) {
       setErrors({ ...errors, [name]: '' });
     }
 
-    // Validate pincode on change
+    
     if (name.includes('Pincode') && value.length === 6) {
       const error = validatePincode(value, name);
       if (error) {
@@ -64,7 +63,7 @@ const PickupDropDetails = ({ data, onNext, serviceType }) => {
 
   const handleSubmit = () => {
     if (validateForm()) {
-      // Check if distance warning
+    
       if (formData.pickupPincode[0] !== formData.dropPincode[0]) {
         setWarnings({ distance: 'Long distance delivery - prices may vary' });
       }

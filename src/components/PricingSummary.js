@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 
 const PricingSummary = ({ addressData, packageData, serviceType, onNext, onEdit }) => {
   const calculatePrice = () => {
